@@ -10,9 +10,11 @@ const Row = ({rowdata,deletedata,editclick}) => {
         <td>{rowdata.fuelused}</td>
         <td>{rowdata.noofvehicles}</td>
         <td>
+        {/* Edit button */}
         <button type="button" onClick={(event) => editclick(event, rowdata)}>
           Edit
         </button>
+        {/* button used to delete particular row */}
         <button type="button" onClick={() => deletedata(rowdata.id)}>
           Delete
         </button>
